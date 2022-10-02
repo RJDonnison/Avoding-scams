@@ -9,8 +9,13 @@
 /**Open Sans*/
 @font-face {
     font-family: 'Open Sans';
-    src: url(Fonts/Open_Sans/OpenSans-VariableFont.ttf) format('truetype');
-    font-display: swap; 
+    src: url(Fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(Fonts/Open_Sans/OpenSans-Light.ttf) format('truetype');
+    font-weight: 100;
 }
 
 /**Smooth scrolling*/
