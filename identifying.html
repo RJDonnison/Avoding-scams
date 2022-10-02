@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--*Scroll point to top-->
+<html lang="en" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--*Meta data-->
+    <meta name="description" content="How to identify and avoid scams">
+    <meta name="keywords" content="Scams, avoiding, identifying">
+    <meta name="author" content="Reuben Donnison">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>Avoiding scams</title>
+</head>
+<!--*Load quiz-->
+
+<body onload="loadQuiz()">
+    <!--*Nav Bar-->
+    <nav>
+        <a href="index.html#scroll">Home</a>
+        <a href="identifying.html" class="active">Identifying Scams</a>
+        <a href="avoiding.html">Avoiding Scams</a>
+        <a href="websites.html">Other Websites</a>
+    </nav>
+    <!--*Strip under nav-->
+    <div id="nav-strip"></div>
+
+    <!--*Top content-->
+    <div id="upper">
+        <!--*Image of blue cards-->
+        <img src="images/cards.jpg" alt="Image of blue bank cards">
+        <div class="text">
+            <p>If you've been scammed, there are organizations you should report the scam to.
+                <br><br>
+                Don't feel embarrassed about reporting a scam – scams are clever and can happen to anyone.
+                <br><br>
+                Reporting a scam helps track down and stop scammers. This prevents other people from being scammed.
+                <br><br>
+                You should:
+            </p>
+            <br>
+            <ul>
+                <li>protect yourself from further risks </li>
+                <li>gather all the details of the scam </li>
+                <li>report the scam to organizations </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--*Lower content-->
+    <div id="lower">
+        <div class="text">
+            <p>Gather all the details of the scam. This will help you remember all the important information when you
+                report it.
+                <br><br>
+                Make sure you include:
+            </p>
+            <br>
+            <ul>
+                <li>Who you've been in contact with – write down names, numbers </li>
+                <li>Why you're suspicious</li>
+                <li>What information you've shared – for example, passwords, or bank details</li>
+                <li>Whether you've paid any money</li>
+                <li>How you've paid – for example, credit card or bank transfer</li>
+            </ul>
+            <br>
+            <p>Contact:</p>
+            <br>
+            <ul>
+                <li>Your bank</li>
+                <li>The company (if you can)</li>
+                <li>Consumer affairs for a fraudulent website</li>
+                <li>The police</li>
+            </ul>
+        </div>
+
+        <!--*Quiz-->
+        <div class="quiz-question">
+            <!--*Quiz question-->
+            <div class="header">
+                <h1>Why should you report a scam?</h1>
+            </div>
+            <!--*Quiz answers-->
+            <div class="question">
+                <button class="answer correct hideAnswers" onclick="clicked(this)">To prevent other people being
+                    scammed</button>
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">To stop your self being scammed
+                    again</button>
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">To help the scammers get
+                    better</button>
+                <button class="submit" onclick="submit()">Submit</button>
+            </div>
+        </div>
+        <div class="quiz-question">
+            <!--*Quiz question-->
+            <div class="header">
+                <h1>Why should you gather all details about the scam?</h1>
+            </div>
+            <!--*Quiz answers-->
+            <div class="question">
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">So you can figure out of its a
+                    scam</button>
+                <button class="answer correct hideAnswers" onclick="clicked(this)">So you have all the
+                    information when you report it</button>
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">So you can provide feedback to the
+                    scammer</button>
+                <button class="submit" onclick="submit()">Submit</button>
+            </div>
+        </div>
+        <div class="quiz-question">
+            <!--*Quiz question-->
+            <div class="header">
+                <h1>When should you contact the police</h1>
+            </div>
+            <!--*Quiz answers-->
+            <div class="question">
+                <button class="answer correct hideAnswers" onclick="clicked(this)">When ever you've been
+                    scammed</button>
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">Only when you think your in
+                    danger</button>
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">Not if you've been scammed</button>
+                <button class="submit" onclick="submit()">Submit</button>
+            </div>
+        </div>
+        <div class="quiz-question">
+            <!--*Quiz score-->
+            <div class="header">
+                <h1>Score</h1>
+            </div>
+            <div class="question">
+                <h1 id="score"></h1>
+                <!--*Quiz restart-->
+                <button class="submit" onclick="loadQuiz()">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!--*Footer-->
+    <footer id="scroll">
+        <p>Website made by Reuben Donnison</p>
+        <!--*Scrolls back to top of page-->
+        <a href="#top">Back to top</a>
+        <p>Content was sourced from these <a href="/websites.html">websites</a></p>
+    </footer>
+</body>
+
+<script src="quiz.js"></script>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--*Scroll point to top-->
+<html lang="en" id="top">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--*Meta data-->
+    <meta name="description" content="How to identify and avoid scams">
+    <meta name="keywords" content="Scams, avoiding, identifying">
+    <meta name="author" content="Reuben Donnison">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <title>Avoiding scams</title>
+</head>
+
+<!--*Load quiz-->
+
+<body onload="loadQuiz()">
+    <!--*Nav Bar-->
+    <nav>
+        <a href="index.html#scroll">Home</a>
+        <a href="identifying.html">Identifying Scams</a>
+        <a href="avoiding.html" class="active">Avoiding Scams</a>
+        <a href="websites.html">Other Websites</a>
+    </nav>
+    <!--*Strip under nav-->
+    <div id="nav-strip"></div>
+
+    <!--*Top content-->
+    <div id="upper">
+        <img src="images/scamEmail.png" alt="Sourced form https://aerorock.co.nz/2015/11/does-your-email-smell-phishy/">
+        <div class="text">
+            <p>Scams are now often sent in email or text massage form. On the left there is an example of a scam email
+                there are a few red flags that you should look out for in every email.
+            </p>
+            <br>
+            <ul>
+                <li>If the email address of the company does not match up to previous email address do not reply to the
+                    email </li>
+                <li>Never use a link in an email to access online banking or to verify your personal details</li>
+                <li>Do not trust emails or companies that you have not heard from before</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--*Lower content-->
+    <div id="lower">
+        <div class="text">
+            <p>Scams usually target money but they can also affect a person’s relationships, self-confidence, online
+                security and privacy.
+                <br><br>
+                The best way to avoid scams is to be suspicious.
+                <br><br>
+                It might be a scam if:
+            </p>
+            <br>
+            <ul>
+                <li>It seems too good to be true – for example, a holiday that’s much cheaper than you’d expect </li>
+                <li>Someone you don’t know contacts you unexpectedly</li>
+                <li>You suspect you’re not dealing with a real company – for example, if there’s no postal address</li>
+                <li>You’ve been asked to transfer money quickly</li>
+                <li>You've been asked to pay in an unusual way – for example, by iTunes vouchers or through a transfer
+                    service like MoneyGram or Western Union</li>
+                <li>You’ve been asked to give away personal information like passwords or PINs</li>
+                <li>You haven't had written confirmation of what's been agreed</li>
+                <li>Check the sender’s email address carefully</li>
+            </ul>
+        </div>
+        <!--*Quiz-->
+        <div class="quiz-question">
+            <!--*Quiz question-->
+            <div class="header">
+                <h1>Your bank contacts you and asks you to confirm your details. What do you do?</h1>
+            </div>
+            <!--*Quiz answers-->
+            <div class="question">
+                <button class="answer correct hideAnswers" onclick="clicked(this)">Email your bank separately and check
+                    if this is a legitimate request</button>
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">Give them your details</button>
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">Ignore them</button>
+                <button class="submit" onclick="submit()">Submit</button>
+            </div>
+        </div>
+        <div class="quiz-question">
+            <!--*Quiz question-->
+            <div class="header">
+                <h1>What is the best way to avoid scams?</h1>
+            </div>
+            <!--*Quiz answers-->
+            <div class="question">
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">Don't go online</button>
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">Be open and trusting</button>
+                <button class="answer correct hideAnswers" onclick="clicked(this)">Be suspicious</button>
+                <button class="submit" onclick="submit()">Submit</button>
+            </div>
+        </div>
+        <div class="quiz-question">
+            <!--*Quiz question-->
+            <div class="header">
+                <h1>Scams usually target money. What can they also affect?</h1>
+            </div>
+            <!--*Quiz answers-->
+            <div class="question">
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">Pets, family members, and physical
+                    safety</button>
+                <button class="answer correct hideAnswers" onclick="clicked(this)">Relationships, self-confidence,
+                    online
+                    security and privacy.</button>
+                <button class="answer wrong hideAnswers" onclick="clicked(this)">Nothing else</button>
+                <button class="submit" onclick="submit()">Submit</button>
+            </div>
+        </div>
+        <div class="quiz-question">
+            <!--*Quiz score-->
+            <div class="header">
+                <h1>Score</h1>
+            </div>
+            <div class="question">
+                <h1 id="score"></h1>
+                <!--*Quiz restart-->
+                <button class="submit" onclick="loadQuiz()">Restart Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!--*Footer-->
+    <footer>
+        <p>Website made by Reuben Donnison</p>
+        <!--*Scrolls back to top of page-->
+        <a href="#top">Back to top</a>
+        <p>Content was sourced from these <a href="/websites.html">websites</a></p>
+    </footer>
+</body>
+
+<script src="quiz.js"></script>
+
+</html>
