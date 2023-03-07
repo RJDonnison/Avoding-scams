@@ -9,12 +9,12 @@
 /**Open Sans*/
 @font-face {
     font-family: 'Open Sans';
-    src: url(/fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
+    src: url(fonts/Open_Sans/OpenSans-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url(/fonts/Open_Sans/OpenSans-Light.ttf) format('truetype');
+    src: url(fonts/Open_Sans/OpenSans-Light.ttf) format('truetype');
     font-weight: 100;
 }
 
